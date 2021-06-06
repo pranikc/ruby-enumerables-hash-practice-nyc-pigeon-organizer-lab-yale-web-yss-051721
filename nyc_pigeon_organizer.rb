@@ -10,6 +10,10 @@ def nyc_pigeon_organizer(data)
   names = names.flatten.uniq
   
   names.each do |name|
+    pigeon_list[name] = {}
+  end
+  
+  names.each do |name|
     data.each do |attribute, type|
       type_list = []
       type.each do |key, arr|
