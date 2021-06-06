@@ -18,7 +18,7 @@ def nyc_pigeon_organizer(data)
       type_list = []
       type.each do |key, arr|
         if arr.include? name
-          type_list.push(key)
+          type_list.push(key.to_s)
         end
       end
       pigeon_list[name][attribute] = type_list
